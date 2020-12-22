@@ -44,6 +44,7 @@
         TextBoxGr.Text = ""
         TextBoxMgr.Text = ""
         TextBoxKgr.Enabled = False
+        TextBoxMgr.Enabled = False
         TextBoxGr.Enabled = True
     End Sub
 
