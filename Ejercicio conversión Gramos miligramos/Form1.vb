@@ -1,5 +1,8 @@
 ﻿Public Class Form1
     Dim Kg, gr, mgr As Double
+
+
+
     Private Sub ButtonExit_Click(sender As Object, e As EventArgs) Handles ButtonExit.Click
         Close()
     End Sub
@@ -28,6 +31,11 @@
         TextBoxGr.Enabled = False
         TextBoxMgr.Enabled = False
         TextBoxKgr.Enabled = True
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.ToolTip1.IsBalloon = True
+        Me.ToolTip1.SetToolTip(PictureBox2, "1Click pasa de gr a mgr y Kgr - 2Clicks pasa de mgr a gr y Kgr")
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
