@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Ejercicio_conversión_Gramos_miligramos.CalcuGram
+            Me.MainForm = Global.Ejercicio_conversión_Gramos_miligramos.Form1
         End Sub
     End Class
 End Namespace

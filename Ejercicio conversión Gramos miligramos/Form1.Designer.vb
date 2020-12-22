@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class CalcuGram
+Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class CalcuGram
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CalcuGram))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.LabelCovertirPeso = New System.Windows.Forms.Label()
         Me.LabelKg = New System.Windows.Forms.Label()
         Me.LabelGr = New System.Windows.Forms.Label()
@@ -31,15 +31,18 @@ Partial Class CalcuGram
         Me.TextBoxGr = New System.Windows.Forms.TextBox()
         Me.TextBoxMgr = New System.Windows.Forms.TextBox()
         Me.ButtonCalcular = New System.Windows.Forms.Button()
-        Me.ButtonSalir = New System.Windows.Forms.Button()
+        Me.ButtonExit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.LabelGrMgr = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LabelCovertirPeso
         '
         Me.LabelCovertirPeso.AutoSize = True
-        Me.LabelCovertirPeso.Location = New System.Drawing.Point(12, 23)
+        Me.LabelCovertirPeso.Location = New System.Drawing.Point(55, 121)
         Me.LabelCovertirPeso.Name = "LabelCovertirPeso"
         Me.LabelCovertirPeso.Size = New System.Drawing.Size(99, 15)
         Me.LabelCovertirPeso.TabIndex = 0
@@ -48,7 +51,7 @@ Partial Class CalcuGram
         'LabelKg
         '
         Me.LabelKg.AutoSize = True
-        Me.LabelKg.Location = New System.Drawing.Point(12, 68)
+        Me.LabelKg.Location = New System.Drawing.Point(12, 234)
         Me.LabelKg.Name = "LabelKg"
         Me.LabelKg.Size = New System.Drawing.Size(87, 15)
         Me.LabelKg.TabIndex = 1
@@ -57,7 +60,7 @@ Partial Class CalcuGram
         'LabelGr
         '
         Me.LabelGr.AutoSize = True
-        Me.LabelGr.Location = New System.Drawing.Point(12, 104)
+        Me.LabelGr.Location = New System.Drawing.Point(222, 234)
         Me.LabelGr.Name = "LabelGr"
         Me.LabelGr.Size = New System.Drawing.Size(105, 15)
         Me.LabelGr.TabIndex = 2
@@ -66,7 +69,7 @@ Partial Class CalcuGram
         'LabelMgr
         '
         Me.LabelMgr.AutoSize = True
-        Me.LabelMgr.Location = New System.Drawing.Point(12, 139)
+        Me.LabelMgr.Location = New System.Drawing.Point(222, 263)
         Me.LabelMgr.Name = "LabelMgr"
         Me.LabelMgr.Size = New System.Drawing.Size(128, 15)
         Me.LabelMgr.TabIndex = 3
@@ -74,15 +77,15 @@ Partial Class CalcuGram
         '
         'TextBoxKgr
         '
-        Me.TextBoxKgr.Location = New System.Drawing.Point(146, 60)
+        Me.TextBoxKgr.Location = New System.Drawing.Point(125, 231)
         Me.TextBoxKgr.Name = "TextBoxKgr"
-        Me.TextBoxKgr.Size = New System.Drawing.Size(100, 23)
+        Me.TextBoxKgr.Size = New System.Drawing.Size(73, 23)
         Me.TextBoxKgr.TabIndex = 4
-        Me.TextBoxKgr.Text = "0"
         '
         'TextBoxGr
         '
-        Me.TextBoxGr.Location = New System.Drawing.Point(146, 96)
+        Me.TextBoxGr.Enabled = False
+        Me.TextBoxGr.Location = New System.Drawing.Point(421, 226)
         Me.TextBoxGr.Name = "TextBoxGr"
         Me.TextBoxGr.Size = New System.Drawing.Size(100, 23)
         Me.TextBoxGr.TabIndex = 5
@@ -90,7 +93,8 @@ Partial Class CalcuGram
         '
         'TextBoxMgr
         '
-        Me.TextBoxMgr.Location = New System.Drawing.Point(146, 136)
+        Me.TextBoxMgr.Enabled = False
+        Me.TextBoxMgr.Location = New System.Drawing.Point(421, 255)
         Me.TextBoxMgr.Name = "TextBoxMgr"
         Me.TextBoxMgr.Size = New System.Drawing.Size(100, 23)
         Me.TextBoxMgr.TabIndex = 6
@@ -98,44 +102,67 @@ Partial Class CalcuGram
         '
         'ButtonCalcular
         '
-        Me.ButtonCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ButtonCalcular.Image = CType(resources.GetObject("ButtonCalcular.Image"), System.Drawing.Image)
         Me.ButtonCalcular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonCalcular.Location = New System.Drawing.Point(24, 187)
+        Me.ButtonCalcular.Location = New System.Drawing.Point(55, 149)
         Me.ButtonCalcular.Name = "ButtonCalcular"
-        Me.ButtonCalcular.Size = New System.Drawing.Size(116, 23)
+        Me.ButtonCalcular.Size = New System.Drawing.Size(99, 32)
         Me.ButtonCalcular.TabIndex = 7
         Me.ButtonCalcular.Text = "CALCULAR"
+        Me.ButtonCalcular.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.ButtonCalcular.UseVisualStyleBackColor = True
         '
-        'ButtonSalir
+        'ButtonExit
         '
-        Me.ButtonSalir.Image = CType(resources.GetObject("ButtonSalir.Image"), System.Drawing.Image)
-        Me.ButtonSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonSalir.Location = New System.Drawing.Point(161, 187)
-        Me.ButtonSalir.Name = "ButtonSalir"
-        Me.ButtonSalir.Size = New System.Drawing.Size(85, 23)
-        Me.ButtonSalir.TabIndex = 8
-        Me.ButtonSalir.Text = "SALIR"
-        Me.ButtonSalir.UseVisualStyleBackColor = True
+        Me.ButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.ButtonExit.Image = CType(resources.GetObject("ButtonExit.Image"), System.Drawing.Image)
+        Me.ButtonExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ButtonExit.Location = New System.Drawing.Point(12, 296)
+        Me.ButtonExit.Name = "ButtonExit"
+        Me.ButtonExit.Size = New System.Drawing.Size(509, 23)
+        Me.ButtonExit.TabIndex = 8
+        Me.ButtonExit.Text = "SALIR"
+        Me.ButtonExit.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(263, 23)
+        Me.PictureBox1.Location = New System.Drawing.Point(204, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(229, 187)
+        Me.PictureBox1.Size = New System.Drawing.Size(317, 169)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
-        'CalcuGram
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(186, 92)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 10
+        Me.PictureBox2.TabStop = False
+        '
+        'LabelGrMgr
+        '
+        Me.LabelGrMgr.AutoSize = True
+        Me.LabelGrMgr.Location = New System.Drawing.Point(222, 201)
+        Me.LabelGrMgr.Name = "LabelGrMgr"
+        Me.LabelGrMgr.Size = New System.Drawing.Size(126, 15)
+        Me.LabelGrMgr.TabIndex = 11
+        Me.LabelGrMgr.Text = "Pasar de Kilogramos a:"
+        '
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(504, 329)
+        Me.ClientSize = New System.Drawing.Size(533, 328)
+        Me.Controls.Add(Me.LabelGrMgr)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.ButtonSalir)
+        Me.Controls.Add(Me.ButtonExit)
         Me.Controls.Add(Me.ButtonCalcular)
         Me.Controls.Add(Me.TextBoxMgr)
         Me.Controls.Add(Me.TextBoxGr)
@@ -147,10 +174,11 @@ Partial Class CalcuGram
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "CalcuGram"
+        Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calculadora Gramos Miligramos"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -164,6 +192,8 @@ Partial Class CalcuGram
     Friend WithEvents TextBoxGr As TextBox
     Friend WithEvents TextBoxMgr As TextBox
     Friend WithEvents ButtonCalcular As Button
-    Friend WithEvents ButtonSalir As Button
+    Friend WithEvents ButtonExit As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents LabelGrMgr As Label
 End Class
