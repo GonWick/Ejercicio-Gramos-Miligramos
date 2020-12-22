@@ -115,7 +115,8 @@ Partial Class Form1
         '
         'ButtonExit
         '
-        Me.ButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.ButtonExit.BackColor = System.Drawing.Color.Red
+        Me.ButtonExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ButtonExit.Image = CType(resources.GetObject("ButtonExit.Image"), System.Drawing.Image)
         Me.ButtonExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ButtonExit.Location = New System.Drawing.Point(12, 296)
@@ -123,7 +124,7 @@ Partial Class Form1
         Me.ButtonExit.Size = New System.Drawing.Size(509, 23)
         Me.ButtonExit.TabIndex = 8
         Me.ButtonExit.Text = "SALIR"
-        Me.ButtonExit.UseVisualStyleBackColor = True
+        Me.ButtonExit.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
