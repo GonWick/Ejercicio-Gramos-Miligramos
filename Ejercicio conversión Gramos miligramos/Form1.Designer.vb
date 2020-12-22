@@ -51,7 +51,7 @@ Partial Class Form1
         'LabelKg
         '
         Me.LabelKg.AutoSize = True
-        Me.LabelKg.Location = New System.Drawing.Point(12, 234)
+        Me.LabelKg.Location = New System.Drawing.Point(55, 234)
         Me.LabelKg.Name = "LabelKg"
         Me.LabelKg.Size = New System.Drawing.Size(87, 15)
         Me.LabelKg.TabIndex = 1
@@ -77,9 +77,9 @@ Partial Class Form1
         '
         'TextBoxKgr
         '
-        Me.TextBoxKgr.Location = New System.Drawing.Point(125, 231)
+        Me.TextBoxKgr.Location = New System.Drawing.Point(12, 255)
         Me.TextBoxKgr.Name = "TextBoxKgr"
-        Me.TextBoxKgr.Size = New System.Drawing.Size(73, 23)
+        Me.TextBoxKgr.Size = New System.Drawing.Size(186, 23)
         Me.TextBoxKgr.TabIndex = 4
         '
         'TextBoxGr
